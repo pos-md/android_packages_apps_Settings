@@ -492,4 +492,7 @@
     <string name="spoof_show_system">Show system apps</string>
     <string name="spoof_filter">Filter</string>
     <string name="spoof_no_apps">No matching apps</string>
+
+    <!-- Wifi Display settings. The title of a menu item to disable mirroring confimration [CHAR LIMIT=40] -->
+    <string name="mirroring_confirmation_disable_menu_item">Disable mirroring confirmation</string>
 </resources>
