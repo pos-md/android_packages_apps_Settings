@@ -408,4 +408,7 @@
 
     <!-- Wifi Display settings. The title of a menu item to disable mirroring confimration [CHAR LIMIT=40] -->
     <string name="mirroring_confirmation_disable_menu_item">Disable mirroring confirmation</string>
+
+    <!-- Override Mock Location restriction -->
+    <string name="override_mock_location_title">Override mock location restriction</string>
 </resources>
