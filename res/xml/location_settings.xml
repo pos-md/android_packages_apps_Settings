@@ -56,8 +56,8 @@
         <SwitchPreferenceCompat
             android:key="override_mock_location"
             android:title="@string/override_mock_location_title"
-            android:summaryOn="Mock locations are hidden from apps"
-            android:summaryOff="Apps can detect mock locations" 
+            android:summaryOn="@string/override_mock_location_summary_on"
+            android:summaryOff="@string/override_mock_location_summary_off"
             android:defaultValue="false"
             settings:controller="com.android.settings.location.OverrideMockLocationPreferenceController" />
 
