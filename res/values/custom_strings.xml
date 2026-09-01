@@ -410,7 +410,7 @@
     <string name="mirroring_confirmation_disable_menu_item">Disable mirroring confirmation</string>
 
     <!-- Override Mock Location restriction -->
-    <string name="override_mock_location_title">Override mock location restriction</string>
-    <string name="override_mock_location_summary_on">Mock locations are hidden from apps</string>
-    <string name="override_mock_location_summary_off">Apps can detect mock locations</string>
+    <string name="override_mock_location_title">Hide mock location from apps</string>
+    <string name="override_mock_location_summary_on">Apps can\'t detect that location is mocked</string>
+    <string name="override_mock_location_summary_off">Apps can detect that location is mocked</string>
 </resources>
