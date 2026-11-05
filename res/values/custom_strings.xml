@@ -413,4 +413,7 @@
     <string name="override_mock_location_title">Hide mock location from apps</string>
     <string name="override_mock_location_summary_on">Apps can\'t detect that location is mocked</string>
     <string name="override_mock_location_summary_off">Apps can detect that location is mocked</string>
+
+    <!-- General -->
+    <string name="category_name_gestures">Gestures</string>
 </resources>
