@@ -185,6 +185,12 @@
         android:order="-350"
         settings:controller="com.android.settings.widget.SystemAdvancedCategoryController">
 
+        <Preference
+            android:key="spoofing_settings"
+            android:title="@string/spoofing_title"
+            android:summary="@string/spoofing_summary"
+            android:fragment="com.android.settings.system.spoof.SpoofingSettings" />
+
         <com.android.settings.spa.preference.ComposePreference
             android:key="developer_options"
             settings:controller="com.android.settings.system.DeveloperOptionsController"/>

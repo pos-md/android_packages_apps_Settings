@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.android.settings.development.spoof;
+package com.android.settings.system.spoof;
 
 import com.android.settings.R;
 
-public class TrickyStoreTargetsFragment extends SpoofAppListFragment {
+public class PixelPropsTargetsFragment extends SpoofAppListFragment {
     @Override
     protected Mode mode() {
-        return Mode.TRICKY;
+        return Mode.PIXEL;
     }
 
     @Override
     protected int titleRes() {
-        return R.string.ts_targets;
+        return R.string.pp_targets;
     }
 }

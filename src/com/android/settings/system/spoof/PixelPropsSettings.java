@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.development.spoof;
+package com.android.settings.system.spoof;
 
 import android.app.settings.SettingsEnums;
 import android.content.ContentResolver;
@@ -27,21 +27,19 @@ import androidx.preference.SwitchPreferenceCompat;
 import com.android.internal.util.custom.PixelDeviceRepository;
 import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.development.DeveloperOptionAwareMixin;
 import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settingslib.development.DevelopmentSettingsEnabler;
 import com.android.settingslib.search.SearchIndexable;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class PixelPropsSettings extends DashboardFragment implements DeveloperOptionAwareMixin {
+public class PixelPropsSettings extends DashboardFragment {
     private static final String TAG = "PixelPropsSettings";
 
     @Override
     public int getMetricsCategory() {
-        return SettingsEnums.DEVELOPMENT;
+        return SettingsEnums.SETTINGS_SYSTEM_CATEGORY;
     }
 
     @Override
@@ -122,10 +120,5 @@ public class PixelPropsSettings extends DashboardFragment implements DeveloperOp
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.pixel_props_settings) {
-                @Override
-                protected boolean isPageSearchEnabled(android.content.Context context) {
-                    return DevelopmentSettingsEnabler.isDevelopmentSettingsEnabled(context);
-                }
-            };
+            new BaseSearchIndexProvider(R.xml.pixel_props_settings);
 }

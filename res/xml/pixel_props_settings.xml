@@ -34,6 +34,6 @@
         android:key="pi_pp_targets"
         android:title="@string/pp_targets"
         android:persistent="false"
-        android:fragment="com.android.settings.development.spoof.PixelPropsTargetsFragment" />
+        android:fragment="com.android.settings.system.spoof.PixelPropsTargetsFragment" />
 
 </PreferenceScreen>

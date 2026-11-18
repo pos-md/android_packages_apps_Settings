@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.development.spoof;
+package com.android.settings.system.spoof;
 
 import android.app.ActivityManager;
 import android.content.ContentResolver;

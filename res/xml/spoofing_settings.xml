@@ -27,14 +27,14 @@
             android:key="spoof_trickystore_enabled"
             android:title="@string/tricky_store_title"
             android:summary="@string/tricky_store_summary"
-            android:fragment="com.android.settings.development.spoof.TrickyStoreSettings"
+            android:fragment="com.android.settings.system.spoof.TrickyStoreSettings"
             android:persistent="false" />
 
         <com.android.settingslib.PrimarySwitchPreference
             android:key="spoof_pif_enabled"
             android:title="@string/play_integrity_fix_title"
             android:summary="@string/play_integrity_fix_summary"
-            android:fragment="com.android.settings.development.spoof.PifSettings"
+            android:fragment="com.android.settings.system.spoof.PifSettings"
             android:persistent="false" />
     </PreferenceCategory>
 
@@ -46,7 +46,7 @@
             android:key="pi_pp_spoof"
             android:title="@string/spoofing_pixel_props_title"
             android:summary="@string/spoofing_pixel_props_summary"
-            android:fragment="com.android.settings.development.spoof.PixelPropsSettings" />
+            android:fragment="com.android.settings.system.spoof.PixelPropsSettings" />
     </PreferenceCategory>
 
     <PreferenceCategory

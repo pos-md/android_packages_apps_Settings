@@ -40,7 +40,7 @@
         android:key="ts_targets"
         android:title="@string/ts_targets"
         android:persistent="false"
-        android:fragment="com.android.settings.development.spoof.TrickyStoreTargetsFragment" />
+        android:fragment="com.android.settings.system.spoof.TrickyStoreTargetsFragment" />
 
     <Preference
         android:key="ts_import_targets"
