@@ -25,6 +25,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
@@ -34,6 +35,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SetupWizardUtils;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.accessibility.PreferenceAdapterInSuw;
 import com.android.settings.utils.SettingsDividerItemDecoration;
 
 import com.google.android.setupdesign.GlifPreferenceLayout;
@@ -152,6 +154,14 @@ public class ChooseLockPatternSize extends SettingsActivity {
             } else {
                 return super.onCreateRecyclerView(inflater, parent, savedInstanceState);
             }
+        }
+
+        @Override
+        protected RecyclerView.Adapter onCreateAdapter(PreferenceScreen preferenceScreen) {
+            if (ThemeHelper.shouldApplyGlifExpressiveStyle(requireContext())) {
+                return new PreferenceAdapterInSuw(preferenceScreen);
+            }
+            return super.onCreateAdapter(preferenceScreen);
         }
 
         @Override
