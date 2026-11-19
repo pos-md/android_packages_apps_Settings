@@ -189,6 +189,7 @@
             android:key="spoofing_settings"
             android:title="@string/spoofing_title"
             android:summary="@string/spoofing_summary"
+            android:icon="@drawable/ic_spoofing_settings"
             android:fragment="com.android.settings.system.spoof.SpoofingSettings" />
 
         <com.android.settings.spa.preference.ComposePreference
